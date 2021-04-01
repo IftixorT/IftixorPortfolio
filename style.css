@@ -1,0 +1,2327 @@
+:root{
+  --colorDefault: #00d0f5;
+  --whiteColor: #ffffff;
+}
+
+
+ /*LOADER*/
+
+.loading{
+  margin: 0 auto;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation: fadeOut 1s;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation: fadeOut 1s;
+  -o-animation-fill-mode: forwards;
+  -moz-animation: fadeOut 1s;
+  -moz-animation-fill-mode: forwards;
+
+}
+
+.main{
+  margin: 15rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.dot{
+  border: 5px solid #000;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+.dot2{
+  border: 5px solid #03b2d1;
+  border-radius: 50px;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  margin: -5px -5px;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  animation: loader 1s linear;
+  animation-iteration-count: infinite;
+  -moz-animation: loader 1s linear;
+  -moz-animation-iteration-count: infinite;
+  -o-animation: loader 1s linear;
+  -o-animation-iteration-count: infinite;
+  -webkit-animation: loader 1s linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes loader{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes loader{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes loader{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeOut{
+  100%{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeOut{
+  100%{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@-o-keyframes fadeOut{
+  100%{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeOut{
+  100%{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+/*LOADER END*/
+
+
+/*scroll*/
+
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  width: 5px!important;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #049fbb!important;
+  border-radius: 50px!important;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(255, 255, 255);
+}
+
+/*scroll END*/
+
+
+/*NAVBAR*/
+
+.navbar{
+  background-color: transparent!important;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+#nav.fixed{
+  background-color: rgb(26, 26, 26)!important;
+  padding: 0;
+}
+.navbar-nav{
+  margin: 0 45rem auto;
+}
+.navbar-brand{
+  font-size: 1.7rem;
+  padding-left: 6rem;
+}
+.navbar-nav > li{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+.nav-link{
+  color: var(--whiteColor)!important;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+}
+.nav-link:hover{
+  color: var(--colorDefault)!important;
+}
+
+.navbar-toggler{
+  margin-right: 15px;
+
+}
+/*NAVBAR END*/
+
+
+
+/*HOME*/
+.home{
+  background: url("img/1111.jpg") no-repeat;
+  background-size: cover;
+  height: 50rem;
+}
+.col-md-12{
+margin: 30% auto;
+}
+.title > p{
+  text-align: center;
+  color: var(--whiteColor);
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  font-family: sans-serif;
+}
+.title > h3{
+  font-size: 3.5rem;
+  color: var(--whiteColor);
+  margin-bottom: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+.button{
+  width: 100%;
+  margin: 3rem 28rem auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.button > a{
+  background-color: #018ca5;
+color: rgb(255, 255, 255);
+border-radius: 10px;
+font-weight: 700;
+text-decoration: none;
+padding: 1.5rem 2.5rem;
+font-size: 1.5rem;
+}
+
+.button > a:hover{
+  background-color: #ffffff;
+color: #018ca5;
+}
+
+
+/*HOME END*/
+
+
+
+/*SERVICES*/
+
+.services{
+  padding: 5rem 0 5rem;
+}
+
+.services > .container > h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.services > .container > .row > .col-md-4 > .card{
+  border-radius: 11px;
+  padding-top: 18px;
+  background-color: #dbdbdb;
+}
+.services > .container > .row > .col-md-4 > .card > .card-header{
+  text-align: center;
+  border-bottom: none;
+  PADDING-TOP: 6px;
+  background-color: transparent;
+}
+.card > .card-header > i{
+font-size: 3rem;
+/* background-color: rgb(255, 238, 0); */
+padding: 1.5rem;
+border-radius: 50px;
+color: #009eb9;
+font-size: 4rem;
+}
+
+.card > .card-body{
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/*SERVICES END*/
+
+
+
+/*PORTFOLIO*/
+
+.card > .card-header{
+  padding: 0;
+  background-color: transparent;
+}
+.portfolio > .container > h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.card{
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 10px;
+}
+.card-header > .img{
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card-header > .overlay{
+  width: 348px;
+  height: 263px;
+  background: #00b3d2d6;
+  color: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  box-shadow: 2px 2px 1px 2px #cececec7;
+}
+.overlay:hover{
+  opacity: 1;
+}
+.more{
+  background-color: rgb(255, 255, 255);
+  padding: 9px;
+  color: rgb(255, 0, 0);
+  border-radius: 7px;
+  text-align: center;
+  margin-left: 100px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.more:hover{
+  text-decoration: none;
+  background-color: red;
+  color: white;
+}
+.overlay > h4{
+  text-align: center;
+  margin-top: 6rem;
+  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.overlay > p{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+
+.text{
+margin-bottom: 20px;
+margin-left: 15rem;
+}
+
+/*EEFFECT */
+.text > a{
+  margin-left: 500px;
+  padding: 12px 25px;
+  background-color: none;
+  border-radius: 7px;
+  border: 3px solid #009eb9;
+  color: #009eb9;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  position: relative;
+  top: 80px;
+  overflow: hidden;
+  transition: .5s;
+  -o-transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+   display: inline-block;
+}
+
+.text > a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+.text > a::before{
+  content: '';
+  background-color: #009eb9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: .5s;
+}
+
+.text > a:hover::before{
+  height: 100%;
+}
+/* EFFECT END*/
+
+/*PORTFOLIO END*/
+
+
+/*ABOUT*/
+
+.about {
+ padding: 5rem 0 5rem;
+}
+.about > .container > h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.about > .container > .row .col-md-4{
+  margin: 4rem 5rem;
+}
+.about > .container > .row > .col-md-4:nth-child(2){
+  margin: 7rem 0;
+}
+.info > h3{
+  font-size: rem;
+  margin-bottom: 2rem;
+  color: #b507c5c7;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.info > p{
+  letter-spacing: 0.8px;
+  margin-top: 3rem 0 6rem;
+  font-weight: bold;
+  color: #03b2d1;
+}
+
+.info > ul > li{
+list-style-type: none;
+font-size: 16px;
+display: flex;
+justify-content: space-between;
+}
+.info > ul {
+  margin-left: -2.7rem;
+  margin-top: 3rem;
+}
+ul > li > .firatSpan{
+font-weight: bold;
+}
+ul > li > .secondSpan{
+  color: #444444;
+  font-size: 18px;
+}
+
+/*ABOUT END*/
+
+/*UP*/
+.gototop.active {
+  opacity: 1;
+  visibility: visible;
+}
+.gototop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.10s;
+  -o-transition: 0.10s;
+  transition: 0.10s;
+}
+.gototop a i {
+  background-color: #8585858f;
+  padding: 15px;
+  color: #00d0f5;
+  text-decoration: none;
+  border-radius: 7px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.gototop a i:hover{
+text-decoration: none;
+background-color: rgba(0, 117, 172, 0.658);
+color: #fff;
+}
+
+/*UP END*/
+
+/*FOOTER*/
+
+.footer{
+  background-color: #444;
+  padding: 3rem;
+  color: white;
+}
+
+.social-networks > a{
+  text-decoration: none;
+  margin: 5px;
+}
+.social-networks > a > i{
+  width: 40px;
+  height: 40px;
+  background-color: #018ca5;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  color: white;
+  transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+}
+.social-networks > a > i:hover{
+  background-color: white;
+  color: #018ca5;
+}
+.copyright{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: -48px;
+  width: 100%;
+  font-weight: 500;
+}
+.ifti{
+  background-color:#01859c;
+  padding: 7px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.left{
+  margin-left: -116px;
+}
+.center{
+  margin-left: 116px;
+}
+.right{
+  padding-left: 250px;
+}
+.right > a{
+  text-decoration: none;
+  color: white;
+}
+
+.right > a:hover{
+  color: #00d0f5;
+  transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+}
+
+/*FOOTER END*/
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1650px){
+  .more{
+    margin-left: 127px;
+  }
+
+}
+
+@media screen and (max-width: 1600px){
+  .more{
+    margin-left: 122px;
+  }
+
+}
+
+@media screen and (max-width: 1500px){
+  .more{
+    margin-left: 120px;
+  }
+
+}
+
+@media screen and (max-width: 1450px){
+  .more{
+    margin-left: 125px;
+  }
+
+}
+
+@media screen and (max-width: 1400px){
+  .more{
+    margin-left: 125px;
+  }
+
+}
+
+@media screen and (max-width: 1350px){
+  .more{
+    margin-left: 125px;
+  }
+
+}
+
+@media screen and (max-width: 1300px){
+  .more{
+    margin-left: 120px;
+  }
+
+}
+
+@media screen and (max-width: 1200px){
+  html, body{
+    overflow-x: hidden;
+  }
+
+.dot, .dot2{
+  width: 100px;
+  height: 100px;
+}
+
+  .navbar > .button{
+    border: none!important;
+  }
+  .navbar > .button:focus{
+    box-shadow: none!important;
+    outline: none!important;
+  }
+  .navbar-brand{
+    padding: 2rem;
+    font-size: 1rem;
+    width: 100px;
+  }
+  .change{
+    background-color: #018ca5!important;
+  }
+  .navbar-nav{
+    margin: 0 38rem;
+  }
+  .navbar-nav > li{
+    margin: 10px;
+  }
+
+  
+  /*Home*/
+  .home{
+    height: 64rem;
+  }
+  .col-md-12{
+    margin: 40% auto;
+  }
+  .title > p{
+    font-size: 3.3rem;
+}
+  .title > h3{
+    font-size: 4.7rem;
+}
+  .button{
+    margin: 3rem 24.5rem auto;
+}
+  .button > a{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+   /*services*/
+   .services > .container > h3{
+    font-size: 1.9rem;
+}
+ .services > .container > p{
+   font-size: 0.9rem;
+ }
+  .card > .card-header > i{
+    font-size: 3rem;
+}
+  
+  .services > .container > .row > .col-md-4 > .card{
+  width: 100%;
+  height: 95%;
+  border-radius: 11px;
+  padding-top: 18px;
+  background-color: #dbdbdb;
+}
+  .services > .container > .row > .col-md-4 > .card > .card-header > h3{
+  font-size: 1.3rem;
+}
+
+/*portfolio*/
+
+.portfolio > .container > h3{
+  font-size: 2rem;
+}
+.portfolio > .container > p{
+  font-size: 0.9rem;
+}
+.card-header > .overlay {
+  width: 289px;
+  height: 218px;
+}
+.more{
+  margin-left: 95px;
+}
+.card{
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 10px;
+  margin: 3px 0px;
+}
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > h4{
+  font-size: 1.1rem;
+}
+
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > p{
+  font-size: 0.7rem;
+}
+.overlay > h4{
+  margin-top: 70px;
+}
+/*about*/
+
+.about > .container > h3{
+  font-size: 1.9rem;
+}
+.about > .container > p{
+  font-size: 0.9rem;
+}
+.about > .container > .row .col-md-4{
+  margin: 3rem 4rem 0;
+}
+.about > .container > .row .col-md-4:nth-child(2) {
+  margin: 4rem 0;
+}
+.info > h3{
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.info > p{
+  font-size: 12px;
+}
+.info > ul > li{
+  font-size: 10px;
+  }
+  ul > li > .secondSpan{
+    font-size: 13px;
+  }
+
+/*footer*/
+
+.footer{
+  padding: 4rem;
+}
+.footer > .container > .row > .col-md-4 {
+  margin-top: 0;
+    font-size: 0;
+    margin-left: -33px;
+    margin-bottom: 0;
+}
+.social-networks > a{
+  margin: 4px;
+}
+.social-networks > a > i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}
+
+.left{
+  margin-left: -61px;
+  margin-left: -29px;
+}
+.left > p{
+  font-size: 1rem;
+}
+.center{
+  margin-left: -61px;
+}
+.col-md-0{
+  margin-left: 123px;
+}
+.col-md-0 > .social-networks{
+  margin-left: -55px;
+  font-size: 0px;
+}
+
+.right{
+  padding-left: 55px;
+  margin-bottom: 3px;
+  padding-top: 20px;
+}
+
+.footer > .container > .row > .io{
+  margin-top: -21px;
+  margin-left: 16px;
+  font-size: 1.3rem;
+}
+
+.ifti{
+  margin-left: 5px;
+  padding-top: 4px;
+  padding: 8px;
+  border-radius: 35px;
+}
+
+}
+
+@media screen and (max-width: 1024px){
+  html, body{
+    overflow-x: hidden;
+  }
+
+.dot, .dot2{
+  width: 100px;
+  height: 100px;
+}
+
+  .navbar > .button{
+    border: none!important;
+  }
+  .navbar > .button:focus{
+    box-shadow: none!important;
+    outline: none!important;
+  }
+  .navbar-brand{
+    padding: 2rem;
+    font-size: 1rem;
+    width: 100px;
+  }
+  .change{
+    background-color: #018ca5!important;
+  }
+  .navbar-nav{
+    margin: 0 30rem;
+  }
+  .navbar-nav > li{
+    margin: 10px;
+  }
+
+  
+  /*Home*/
+  .home{
+    height: 64rem;
+  }
+  .col-md-12{
+    margin: 40% auto;
+  }
+  .title > p{
+    font-size: 2.5rem;
+}
+  .title > h3{
+    font-size: 3.5rem;
+}
+  .button{
+    margin: 3rem 24.5rem auto;
+}
+  .button > a{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+   /*services*/
+   .services > .container > h3{
+    font-size: 1.9rem;
+}
+ .services > .container > p{
+   font-size: 0.9rem;
+ }
+  .card > .card-header > i{
+    font-size: 3rem;
+}
+  
+  .services > .container > .row > .col-md-4 > .card{
+  width: 100%;
+  height: 95%;
+  border-radius: 11px;
+  padding-top: 18px;
+  background-color: #dbdbdb;
+}
+  .services > .container > .row > .col-md-4 > .card > .card-header > h3{
+  font-size: 1.3rem;
+}
+
+/*portfolio*/
+
+.portfolio > .container > h3{
+  font-size: 2rem;
+}
+.portfolio > .container > p{
+  font-size: 0.9rem;
+}
+.card-header > .overlay {
+  width: 289px;
+  height: 218px;
+}
+.more{
+  margin-left: 100px;
+}
+.card{
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 10px;
+  margin: 3px 0px;
+}
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > h4{
+  font-size: 1.1rem;
+}
+
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > p{
+  font-size: 0.7rem;
+}
+.overlay > h4{
+  margin-top: 70px;
+}
+/*about*/
+
+.about > .container > h3{
+  font-size: 1.9rem;
+}
+.about > .container > p{
+  font-size: 0.9rem;
+}
+.about > .container > .row .col-md-4{
+  margin: 3rem 4rem 0;
+}
+.about > .container > .row .col-md-4:nth-child(2) {
+  margin: 4rem 0;
+}
+.info > h3{
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.info > p{
+  font-size: 10px;
+}
+.info > ul > li{
+  font-size: 12px;
+  }
+  ul > li > .secondSpan{
+    font-size: 13px;
+  }
+
+/*footer*/
+
+.footer{
+  padding: 4rem;
+}
+.footer > .container > .row > .col-md-4 {
+  margin-top: 0;
+    font-size: 0;
+    margin-left: -33px;
+    margin-bottom: 0;
+}
+.social-networks > a{
+  margin: 4px;
+}
+.social-networks > a > i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}
+
+.left{
+  margin-left: -61px;
+  margin-left: -29px;
+}
+.left > p{
+  font-size: 1rem;
+}
+.center{
+  margin-left: -61px;
+}
+.col-md-0{
+  margin-left: 123px;
+}
+.col-md-0 > .social-networks{
+  margin-left: -55px;
+  font-size: 0px;
+}
+
+.right{
+  padding-left: 55px;
+  margin-bottom: 3px;
+  padding-top: 20px;
+}
+
+.footer > .container > .row > .io{
+  margin-top: -21px;
+  margin-left: 16px;
+  font-size: 1.3rem;
+}
+
+.ifti{
+  margin-left: 5px;
+  padding-top: 4px;
+  padding: 8px;
+  border-radius: 35px;
+}
+
+}
+
+@media screen and (max-width: 976px){
+  html, body{
+    overflow-x: hidden;
+  }
+
+.dot, .dot2{
+  width: 100px;
+  height: 100px;
+}
+
+  .navbar > .button{
+    border: none!important;
+  }
+  .navbar > .button:focus{
+    box-shadow: none!important;
+    outline: none!important;
+  }
+  .navbar-brand{
+    padding: 2rem;
+    font-size: 1rem;
+    width: 100px;
+  }
+  .change{
+    background-color: #018ca5!important;
+  }
+  .navbar-nav{
+    margin: 0 15rem;
+  }
+  .navbar-nav > li{
+    margin: 10px;
+  }
+
+  
+  /*Home*/
+  .home{
+    height: 64rem;
+  }
+  .col-md-12{
+    margin: 54% auto;
+  }
+  .title > p{
+    font-size: 2.5rem;
+}
+  .title > h3{
+    font-size: 3.5rem;
+}
+  .button{
+    margin: 3rem 17rem auto;
+}
+  .button > a{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+   /*services*/
+   .services > .container > h3{
+    font-size: 1.9rem;
+}
+ .services > .container > p{
+   font-size: 0.9rem;
+ }
+  .card > .card-header > i{
+    font-size: 3rem;
+}
+  
+  .services > .container > .row > .col-md-4 > .card{
+  width: 100%;
+  height: 95%;
+  border-radius: 11px;
+  padding-top: 18px;
+  background-color: #dbdbdb;
+}
+  .services > .container > .row > .col-md-4 > .card > .card-header > h3{
+  font-size: 1.3rem;
+}
+
+/*portfolio*/
+
+.portfolio > .container > h3{
+  font-size: 2rem;
+}
+.portfolio > .container > p{
+  font-size: 0.9rem;
+}
+.card-header > .overlay {
+  width: 208px;
+  height: 157px;
+}
+.more{
+  margin-left: 54px;
+}
+.card{
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 10px;
+  margin: 3px 0px;
+}
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > h4{
+  font-size: 1.1rem;
+}
+
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > p{
+  font-size: 0.7rem;
+}
+.overlay > h4{
+  margin-top: 58px;
+}
+.text {
+  margin-bottom: 20px;
+  margin-left: -11rem;
+}
+/*about*/
+
+.about > .container > h3{
+  font-size: 1.9rem;
+}
+.about > .container > p{
+  font-size: 0.9rem;
+}
+.about > .container > .row .col-md-4{
+  margin: 3rem 2rem 0;
+}
+.about > .container > .row .col-md-4:nth-child(2) {
+  margin: 3rem 0;
+}
+.info > h3{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.info > p{
+  font-size: 10px;
+}
+.info > ul > li{
+  font-size: 9px;
+  }
+  ul > li > .secondSpan{
+    font-size: 10px;
+  }
+
+/*footer*/
+
+.footer{
+  padding: 4rem;
+}
+.footer > .container > .row > .col-md-4 {
+  margin-top: 0;
+    font-size: 0;
+    margin-left: -34px;
+    margin-bottom: 0;
+}
+.social-networks > a{
+  margin: 4px;
+}
+.social-networks > a > i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}
+
+.left{
+  margin-left: -61px;
+  margin-left: -29px;
+}
+.left > p{
+  font-size: 0.7rem;
+}
+.center{
+  margin-left: -61px;
+}
+.col-md-0{
+  margin-left: 46px;
+}
+.col-md-0 > .social-networks{
+  margin-left: -55px;
+  font-size: 0px;
+}
+
+.right{
+  padding-left: 55px;
+  margin-bottom: 3px;
+  padding-top: 20px;
+}
+
+.footer > .container > .row > .io{
+  margin-top: -21px;
+  margin-left: 16px;
+  font-size: 1.3rem;
+}
+
+.ifti{
+  margin-left: 52px;
+  padding-top: 4px;
+  padding: 5px;
+  border-radius: 35px;
+}
+
+}
+
+@media screen and (max-width: 767px){
+  html, body{
+    overflow-x: hidden;
+  }
+
+.dot, .dot2{
+  width: 70px;
+  height: 70px;
+}
+
+
+  .navbar > .button{
+    border: none!important;
+  }
+  .navbar > .button:focus{
+    box-shadow: none!important;
+    outline: none!important;
+  }
+  .navbar-brand{
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100px;
+  }
+  .change{
+    background-color: #018ca5!important;
+  }
+  .navbar-nav{
+    margin: 0 15rem;
+  }
+  .navbar-nav > li{
+    margin: 10px;
+  }
+
+  
+  /*Home*/
+  .home{
+    height: 52rem;
+  }
+  .col-md-12{
+    margin: 54% auto;
+  }
+  .title > p{
+    font-size: 2.4rem;
+}
+  .title > h3{
+    font-size: 2.9rem;
+}
+  .button{
+    margin: 3rem 12rem auto;
+}
+  .button > a{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+   /*services*/
+   .services > .container > h3{
+    font-size: 1.9rem;
+}
+ .services > .container > p{
+   font-size: 0.9rem;
+ }
+  .card > .card-header > i{
+    font-size: 3rem;
+}
+  
+  .services > .container > .row > .col-md-4 > .card{
+  width: 100%;
+  height: 95%;
+  border-radius: 11px;
+  padding-top: 18px;
+  background-color: #dbdbdb;
+}
+  .services > .container > .row > .col-md-4 > .card > .card-header > h3{
+  font-size: 1.3rem;
+}
+
+/*portfolio*/
+
+.portfolio > .container > h3{
+  font-size: 2rem;
+}
+.portfolio > .container > p{
+  font-size: 0.9rem;
+}
+.card-header > .overlay {
+  width: 530px;
+  height: 398px;;
+}
+.card{
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 10px;
+  margin: 3px 0px;
+}
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > h4{
+  font-size: 1.9rem;
+}
+
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > p{
+  font-size: 1.3rem;
+}
+.text {
+  margin-bottom: 20px;
+  margin-left: -19rem;
+}
+
+/*about*/
+
+.about > .container > h3{
+  font-size: 1.9rem;
+}
+.about > .container > p{
+  font-size: 0.9rem;
+}
+.about > .container > .row .col-md-4{
+  margin: 3rem 2rem 0;
+}
+.about > .container > .row .col-md-4:nth-child(2) {
+  margin: 4rem 0;
+}
+.info > h3{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.info > p{
+  margin-top: 2rem 0 6rem;
+}
+.info > ul > li{
+  font-size: 20px;
+  }
+  ul > li > .secondSpan{
+    font-size: 24px;
+  }
+
+/*footer*/
+
+.footer{
+  padding: 4rem;
+}
+.footer > .container > .row > .col-md-4 {
+  margin-top: 0;
+  font-size: 14px;
+  margin-left: 96px;
+  margin-bottom: 1rem;
+}
+.social-networks > a{
+  margin: 4px;
+}
+.social-networks > a > i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}
+
+.left{
+  margin-left: -61px;
+  margin-left: -29px;
+}
+.left > p{
+  font-size: 1.2rem;
+}
+.center{
+  margin-left: -61px;
+}
+.col-md-0{
+  margin-left: 110px;
+}
+.col-md-0 > .social-networks{
+  margin-left: -55px;
+}
+
+.right{
+  padding-left: 55px;
+  margin-bottom: 3px;
+  padding-top: 20px;
+}
+
+.footer > .container > .row > .io{
+  margin-top: 25px;
+  margin-left: 75px;
+  font-size: 1.3rem;
+}
+
+.ifti{
+  margin-left: 3px;
+  padding-top: 4px;
+  padding: 5px;
+  border-radius: 35px;
+}
+
+}
+
+@media screen and (max-width: 501px){
+  html, body{
+    overflow-x: hidden;
+  }
+
+.dot, .dot2{
+  width: 70px;
+  height: 70px;
+}
+
+.qr{
+  margin-left: 60px;
+}
+  .navbar > .button{
+    border: none!important;
+  }
+  .navbar > .button:focus{
+    box-shadow: none!important;
+    outline: none!important;
+  }
+  .navbar-brand{
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100px;
+  }
+  .change{
+    background-color: #018ca5!important;
+  }
+  .navbar-nav{
+    margin: 0 12rem;
+  }
+  .navbar-nav > li{
+    margin: 10px;
+  }
+
+  
+  /*Home*/
+  .home{
+    height: 46rem;
+  }
+  .col-md-12{
+    margin: 67% auto;
+  }
+  .title > p{
+    font-size: 2rem;
+}
+  .title > h3{
+    font-size: 2.7rem;
+}
+  .button{
+    margin: 3rem 9.8rem auto;
+}
+  .button > a{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+   /*services*/
+   .services > .container > h3{
+    font-size: 1.9rem;
+}
+ .services > .container > p{
+   font-size: 0.9rem;
+ }
+  .card > .card-header > i{
+    font-size: 3rem;
+}
+  
+  .services > .container > .row > .col-md-4 > .card{
+  width: 100%;
+  height: 95%;
+  border-radius: 11px;
+  padding-top: 18px;
+  background-color: #dbdbdb;
+}
+  .services > .container > .row > .col-md-4 > .card > .card-header > h3{
+  font-size: 1.3rem;
+}
+
+/*portfolio*/
+
+.portfolio > .container > h3{
+  font-size: 2rem;
+}
+.portfolio > .container > p{
+  font-size: 0.9rem;
+}
+.card-header > .overlay {
+  width: 449px;
+  height: 337px;
+}
+.card{
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 10px;
+  margin: 3px 0px;
+}
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > h4{
+  font-size: 1.9rem;
+}
+
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > p{
+  font-size: 1.3rem;
+}
+.text {
+  margin-bottom: 20px;
+  margin-left: -20rem;
+}
+
+/*about*/
+
+.about > .container > h3{
+  font-size: 1.9rem;
+}
+.about > .container > p{
+  font-size: 0.9rem;
+}
+.about > .container > .row .col-md-4{
+  margin: 3rem 2rem 0;
+}
+.about > .container > .row .col-md-4:nth-child(2) {
+  margin: 4rem 0;
+}
+.info > h3{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.info > p{
+  margin-top: 2rem 0 6rem;
+}
+.info > ul > li{
+  font-size: 17px;
+  }
+  ul > li > .secondSpan{
+    font-size: 20px;
+  }
+
+/*footer*/
+
+.footer{
+  padding: 4rem;
+}
+.footer > .container > .row > .col-md-4 {
+  margin-top: 0;
+  font-size: 14px;
+  margin-left: 73px;
+  margin-bottom: 1rem;
+}
+.social-networks > a{
+  margin: 4px;
+}
+.social-networks > a > i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}
+
+.left{
+  margin-left: -61px;
+  margin-left: -29px;
+}
+.left > p{
+  font-size: 1.2rem;
+}
+.center{
+  margin-left: -61px;
+}
+.col-md-0{
+  margin-left: 110px;
+}
+.col-md-0 > .social-networks{
+  margin-left: -55px;
+}
+
+.right{
+  padding-left: 55px;
+  margin-bottom: 3px;
+  padding-top: 20px;
+}
+
+.footer > .container > .row > .io{
+  margin-top: 25px;
+  margin-left: 75px;
+  font-size: 1.3rem;
+}
+
+.ifti{
+  margin-left: 41px;
+  padding-top: 4px;
+  padding: 5px;
+  border-radius: 35px;
+}
+
+}
+
+@media screen and (max-width: 460px){
+  html, body{
+    overflow-x: hidden;
+  }
+
+.dot, .dot2{
+  width: 70px;
+  height: 70px;
+}
+
+
+  .navbar > .button{
+    border: none!important;
+  }
+  .navbar > .button:focus{
+    box-shadow: none!important;
+    outline: none!important;
+  }
+  .navbar-brand{
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100px;
+  }
+  .change{
+    background-color: #018ca5!important;
+  }
+  .navbar-nav{
+    margin: 0 9.5rem;
+  }
+  .navbar-nav > li{
+    margin: 10px;
+  }
+
+  
+  /*Home*/
+  .home{
+    height: 46rem;
+  }
+  .col-md-12{
+    margin: 67% auto;
+  }
+  .title > p{
+    font-size: 1.8rem;
+}
+  .title > h3{
+    font-size: 2.2rem;
+}
+  .button{
+    margin: 3rem 7.8rem auto;
+}
+  .button > a{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+   /*services*/
+   .services > .container > h3{
+    font-size: 1.9rem;
+}
+ .services > .container > p{
+   font-size: 0.9rem;
+ }
+  .card > .card-header > i{
+    font-size: 3rem;
+}
+  
+  .services > .container > .row > .col-md-4 > .card{
+  width: 100%;
+  height: 95%;
+  border-radius: 11px;
+  padding-top: 18px;
+  background-color: #dbdbdb;
+}
+  .services > .container > .row > .col-md-4 > .card > .card-header > h3{
+  font-size: 1.3rem;
+}
+
+/*portfolio*/
+
+.portfolio > .container > h3{
+  font-size: 1.9rem;
+}
+.portfolio > .container > p{
+  font-size: 0.9rem;
+}
+.card-header > .overlay {
+  width: 382px;
+  height: 289px;
+}
+.more{
+  margin-left: 140px;
+}
+.card{
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 10px;
+  margin: 3px 0px;
+}
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > h4{
+  font-size: 1.2rem;
+}
+
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > p{
+  font-size: 1rem;
+}
+.text {
+  margin-bottom: 20px;
+  margin-left: -22rem;
+}
+
+/*about*/
+
+.about > .container > h3{
+  font-size: 1.9rem;
+}
+.about > .container > p{
+  font-size: 0.9rem;
+}
+.about > .container > .row .col-md-4{
+  margin: 3rem 2rem 0;
+}
+.about > .container > .row .col-md-4:nth-child(2) {
+  margin: 4rem 0;
+}
+.info > h3{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.info > p{
+  margin-top: 2rem 0 6rem;
+}
+.info > ul > li{
+  font-size: 16px;
+  }
+  ul > li > .secondSpan{
+    font-size: 17px;
+  }
+
+/*footer*/
+
+.footer{
+  padding: 4rem;
+}
+.footer > .container > .row > .col-md-4 {
+  margin-top: 0;
+  font-size: 14px;
+  margin-left: 25px;
+  margin-bottom: 1rem;
+}
+.social-networks > a{
+  margin: 4px;
+}
+.social-networks > a > i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}
+
+.left{
+  margin-left: -61px;
+  margin-left: -29px;
+}
+.left > p{
+  font-size: 1.2rem;
+}
+.center{
+  margin-left: -61px;
+}
+.col-md-0{
+  margin-left: 41px;
+}
+.col-md-0 > .social-networks{
+  margin-left: -55px;
+}
+
+.right{
+  padding-left: 55px;
+  margin-bottom: 3px;
+}
+
+.footer > .container > .row > .io{
+  margin-top: 25px;
+  margin-left: 0;
+  font-size: 1.3rem;
+}
+
+.ifti{
+  margin-left: -3px;
+  padding-top: 4px;
+  padding: 5px;
+  border-radius: 35px;
+}
+
+}
+
+@media screen and (max-width: 400px){
+  html, body{
+    overflow-x: hidden;
+  }
+
+.dot, .dot2{
+  width: 70px;
+  height: 70px;
+}
+
+
+  .navbar > .button{
+    border: none!important;
+  }
+  .navbar > .button:focus{
+    box-shadow: none!important;
+    outline: none!important;
+  }
+  .navbar-brand{
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100px;
+  }
+  .change{
+    background-color: #018ca5!important;
+  }
+  .navbar-nav{
+    margin: 0 8rem;
+  }
+  .navbar-nav > li{
+    margin: 10px;
+  }
+
+  
+  /*Home*/
+  .home{
+    height: 51rem;
+  }
+  .col-md-12{
+    margin: 80% auto;
+  }
+  .title > p{
+    font-size: 1.4rem;
+}
+  .title > h3{
+    font-size: 1.8rem;
+}
+  .button{
+    margin: 3rem 7rem auto;
+}
+  .button > a{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+   /*services*/
+   .services > .container > h3{
+    font-size: 1.9rem;
+}
+ .services > .container > p{
+   font-size: 0.9rem;
+ }
+  .card > .card-header > i{
+    font-size: 3rem;
+}
+  
+  .services > .container > .row > .col-md-4 > .card{
+  width: 100%;
+  height: 95%;
+  border-radius: 11px;
+  padding-top: 18px;
+  background-color: #dbdbdb;
+}
+  .services > .container > .row > .col-md-4 > .card > .card-header > h3{
+  font-size: 1.3rem;
+}
+
+/*portfolio*/
+
+.portfolio > .container > h3{
+  font-size: 1.9rem;
+}
+.portfolio > .container > p{
+  font-size: 0.9rem;
+}
+.card-header > .overlay {
+  width: 343px;
+  height: 255px;
+}
+.more{
+  margin-left: 118px;
+}
+.card{
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 10px;
+  margin: 3px 0px;
+}
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > h4{
+  font-size: 1.2rem;
+}
+
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > p{
+  font-size: 1rem;
+}
+.text {
+  margin-bottom: 20px;
+  margin-left: -23rem;
+}
+
+/*about*/
+
+.about > .container > h3{
+  font-size: 1.9rem;
+}
+.about > .container > p{
+  font-size: 0.9rem;
+}
+.about > .container > .row .col-md-4{
+  margin: 3rem 1rem 0;
+}
+.about > .container > .row .col-md-4:nth-child(2) {
+  margin: 4rem 0;
+}
+.info > h3{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.info > p{
+  margin-top: 2rem 0 6rem;
+}
+.info > ul > li{
+  font-size: 16px;
+  }
+  ul > li > .secondSpan{
+    font-size: 17px;
+  }
+
+/*footer*/
+
+.footer{
+  padding: 4rem;
+}
+.footer > .container > .row > .col-md-4 {
+  margin-top: 0;
+  font-size: 14px;
+  margin-left: 25px;
+  margin-bottom: 1rem;
+}
+.social-networks > a{
+  margin: 4px;
+}
+.social-networks > a > i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}
+
+.left{
+  margin-left: -61px;
+  margin-left: -29px;
+}
+.center{
+  margin-left: -61px;
+}
+.col-md-0{
+  margin-left: 29px;
+}
+.col-md-0 > .social-networks{
+  margin-left: -55px;
+}
+
+.right{
+  padding-left: 55px;
+  margin-bottom: 3px;
+}
+
+.footer > .container > .row > .io{
+  margin-top: 25px;
+  margin-left: 0;
+  font-size: 1rem;
+}
+
+.ifti{
+  margin-left: -75px;
+  padding-top: 16px;
+  padding: 4px;
+  border-radius: 35px
+}
+
+}
+
+@media screen and (max-width: 370px){
+  html, body{
+    overflow-x: hidden;
+  }
+
+.dot, .dot2{
+  width: 70px;
+  height: 70px;
+}
+
+
+  .navbar > .button{
+    border: none!important;
+  }
+  .navbar > .button:focus{
+    box-shadow: none!important;
+    outline: none!important;
+  }
+  .navbar-brand{
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100px;
+  }
+  .change{
+    background-color: #018ca5!important;
+  }
+  .navbar-nav{
+    margin: 0 8rem;
+  }
+  .navbar-nav > li{
+    margin: 10px;
+  }
+
+  
+  /*Home*/
+  .home{
+    height: 40rem;
+  }
+  .col-md-12{
+    margin: 67% auto;
+  }
+  .title > p{
+    font-size: 1.4rem;
+}
+  .title > h3{
+    font-size: 1.8rem;
+}
+  .button{
+    margin: 3rem 6.2rem auto;
+}
+  .button > a{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+   /*services*/
+   .services > .container > h3{
+    font-size: 1.9rem;
+}
+ .services > .container > p{
+   font-size: 0.9rem;
+ }
+  .card > .card-header > i{
+    font-size: 3rem;
+}
+  
+  .services > .container > .row > .col-md-4 > .card{
+  width: 100%;
+  height: 95%;
+  border-radius: 11px;
+  padding-top: 18px;
+  background-color: #dbdbdb;
+}
+  .services > .container > .row > .col-md-4 > .card > .card-header > h3{
+  font-size: 1.3rem;
+}
+
+/*portfolio*/
+
+.portfolio > .container > h3{
+  font-size: 1.9rem;
+}
+.portfolio > .container > p{
+  font-size: 0.9rem;
+}
+.card-header > .overlay {
+  width: 328px;
+  height: 249px;
+}
+.more{
+  margin-left: 118px;
+}
+.card{
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 10px;
+  margin: 3px 0px;
+}
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > h4{
+  font-size: 1.2rem;
+}
+
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > p{
+  font-size: 1rem;
+}
+.text {
+  margin-bottom: 20px;
+  margin-left: -25rem;
+}
+
+/*about*/
+
+.about > .container > h3{
+  font-size: 1.9rem;
+}
+.about > .container > p{
+  font-size: 0.9rem;
+}
+.about > .container > .row .col-md-4{
+  margin: 3rem 1rem 0;
+}
+.about > .container > .row .col-md-4:nth-child(2) {
+  margin: 4rem 0;
+}
+.info > h3{
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.info > p{
+  margin-top: 2rem 0 6rem;
+}
+.info > ul > li{
+  font-size: 15px;
+  }
+  ul > li > .secondSpan{
+    font-size: 14px;
+  }
+
+/*footer*/
+
+.footer{
+  padding: 4rem;
+}
+.footer > .container > .row > .col-md-4 {
+  margin-top: 0;
+  font-size: 14px;
+  margin-left: 25px;
+  margin-bottom: 1rem;
+}
+.social-networks > a{
+  margin: 4px;
+}
+.social-networks > a > i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}
+
+.left{
+  margin-left: -61px;
+  margin-left: -29px;
+}
+.center{
+  margin-left: -61px;
+}
+.col-md-0{
+  margin-left: 29px;
+}
+.col-md-0 > .social-networks{
+  margin-left: -55px;
+}
+
+.right{
+  padding-left: 55px;
+  margin-bottom: 3px;
+}
+
+.footer > .container > .row > .io{
+  margin-top: 25px;
+  margin-left: 0;
+  font-size: 1rem;
+}
+
+.ifti{
+  margin-left: -75px;
+  padding-top: 16px;
+  padding: 4px;
+  border-radius: 35px
+}
+
+}
+
+@media (min-width: 280px) and (max-width: 320px){
+  html, body{
+    overflow-x: hidden;
+  }
+
+.dot, .dot2{
+  width: 70px;
+  height: 70px;
+}
+
+
+  .navbar > .button{
+    border: none!important;
+  }
+  .navbar > .button:focus{
+    box-shadow: none!important;
+    outline: none!important;
+  }
+  .navbar-brand{
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100px;
+  }
+  .change{
+    background-color: #018ca5!important;
+  }
+  .navbar-nav{
+    margin: 0 6rem;
+  }
+  .navbar-nav > li{
+    margin: 10px;
+  }
+
+  
+  /*Home*/
+  .home{
+    height: 50%;
+  }
+  .col-md-12{
+    margin: 67% auto;
+  }
+  .title > p{
+    font-size: 1.4rem;
+}
+  .title > h3{
+    font-size: 1.8rem;
+}
+  .button{
+    margin: 3rem 5.4rem auto;
+}
+  .button > a{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+   /*services*/
+   .services > .container > h3{
+    font-size: 1.9rem;
+}
+ .services > .container > p{
+   font-size: 0.9rem;
+ }
+  .card > .card-header > i{
+    font-size: 3rem;
+}
+  
+  .services > .container > .row > .col-md-4 > .card{
+  width: 100%;
+  height: 95%;
+  border-radius: 11px;
+  padding-top: 18px;
+  background-color: #dbdbdb;
+}
+  .services > .container > .row > .col-md-4 > .card > .card-header > h3{
+  font-size: 1.3rem;
+}
+
+/*portfolio*/
+
+.portfolio > .container > h3{
+  font-size: 1.9rem;
+}
+.portfolio > .container > p{
+  font-size: 0.9rem;
+}
+.card-header > .overlay {
+  width: 288px;
+  height: 219px;
+}
+.more{
+  margin-left: 95px;
+}
+.card{
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 10px;
+  margin: 3px 0px;
+}
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > h4{
+  font-size: 1.2rem;
+}
+
+.portfolio > .container > .row > .col-md-4 > .card > .card-header > .overlay > p{
+  font-size: 1rem;
+}
+.text {
+  margin-bottom: 20px;
+  margin-left: -25rem;
+}
+
+/*about*/
+
+.about > .container > h3{
+  font-size: 1.9rem;
+}
+.about > .container > p{
+  font-size: 0.9rem;
+}
+.about > .container > .row .col-md-4{
+  margin: 3rem 1rem 0;
+}
+.about > .container > .row .col-md-4:nth-child(2) {
+  margin: 4rem 0;
+}
+.info > h3{
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.info > p{
+  margin-top: 2rem 0 6rem;
+  font-size: 1rem;
+}
+.info > ul > li{
+  font-size: 15px;
+  }
+  ul > li > .secondSpan{
+    font-size: 14px;
+  }
+
+/*footer*/
+
+.footer{
+  padding: 4rem;
+}
+.footer > .container > .row > .col-md-4 {
+  margin-top: 0;
+  font-size: 14px;
+  margin-left: 25px;
+  margin-bottom: 1rem;
+}
+.social-networks > a{
+  margin: 4px;
+}
+.social-networks > a > i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}
+
+.left{
+  margin-left: -61px;
+  margin-left: -29px;
+}
+.left > p{
+  font-size: 1rem;
+}
+.center{
+  margin-left: -61px;
+}
+.col-md-0{
+  margin-left: 29px;
+}
+.col-md-0 > .social-networks{
+  margin-left: -95px;
+}
+
+.right{
+  padding-left: 55px;
+  margin-bottom: 3px;
+}
+
+.footer > .container > .row > .io{
+  margin-top: 25px;
+  margin-left: -16px;
+}
+
+.ifti{
+  margin-left: -20px;
+  padding-top: 16px;
+  padding: 4px;
+  border-radius: 35px
+}
+}
+
+/*RESPONSIVE END*/

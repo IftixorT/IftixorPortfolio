@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitHubAvatar.html</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!--LOADER-->
+    <div class="loading">
+        <div class="main">
+            <div class="dot">
+                <div class="dot2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--LOADER END-->
+
+    <!--NAV-->
+    <nav id="nav" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img src="img/ProCoder 2.png" alt="Portfolio" width="130px"></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button onclick="navBack()" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!--NAV END-->
+
+    <div class="m-5">
+        <script>
+            async function showAvatar() {
+
+                let userName = document.getElementById('userName').value;
+
+                let gitHubUrl = `https://api.github.com/users/${userName}`;
+
+                let gitHubResponsive = await fetch(gitHubUrl);
+
+                let gitHubUser = await gitHubResponsive.json();
+
+                document.getElementById('userData').innerHTML = "";
+
+                let img = document.createElement('img');
+
+                img.src = gitHubUser.avatar_url;
+
+                document.getElementById('userData').append(img);
+                document.getElementById('url').innerHTML = gitHubUrl;
+            }
+        </script>
+
+        <html>
+
+        Github foydalanuvchisi nomini kriting:
+        <input type="text" class="col-3 form-control mt-3" id="userName" />
+        <button type="button" class="btn btn-success mt-2" onclick="showAvatar()">Avatarni ko`rsat</button>
+        <p></p>
+
+        <div id="userData">
+
+        </div>
+
+        <p id="url"></p>
+    </div>
+
+
+</body>
+
+</html>
+
+
+<!--UP-->
+<div class="gototop js-top active">
+    <a href="#" class="js-gotop"><i class="fas fa-arrow-up"></i></a>
+</div>
+<!--UP END-->
+
+<script src="demo copy.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+
+</html>

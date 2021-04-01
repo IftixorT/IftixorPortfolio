@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style 2.css">
+    <link rel="icon" href="img/logo.png" type="img/png">
+    <title>ProCoder Portfolio</title>
+</head>
+
+<body>
+    <!--LOADER-->
+    <div class="loading">
+        <div class="main">
+            <div class="dot">
+                <div class="dot2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--LOADER END-->
+
+    <nav id="nav" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img src="img/ProCoder 2.png" alt="Portfolio" width="130px"></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button onclick="navBack()" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index 2.html">Calculator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Kredit Summasini chiqarish texnalogiyasi</h2>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" onkeyup="mainPay()" id="kreditSumma"
+                            placeholder="Kredit summasi">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" onkeyup="mainPay()" id="kreditPay"
+                            placeholder="Boshlang`ich to`lov">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row id mt-4">
+            <div class="col-md-6">
+                <select id="kreditFoiz" onchange="mainPay()" class="form-control">
+                    <option value="9">9%</option>
+                    <option value="12">12%</option>
+                    <option value="14">14%</option>
+                    <option value="18">18%</option>
+                    <option value="20">20%</option>
+                    <option value="24">24%</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <select id="kreditYil" class="form-control">
+                    <option value="1">1 yil</option>
+                    <option value="3">3 yil</option>
+                    <option value="5">5 yil</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <input type="text" class="form-control disabled" disabled id="resultSuma">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control disabled" disabled id="resultPay">
+            </div>
+            <div class="col-md-4 buttonn">
+                <button type="button" class="btn btn-success" onclick="hisob()">Hisoblash</button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <table class="table table-bordered table-hover table-striped">
+                    <tr>
+                        <th>T/r</th>
+                        <th>Oylar</th>
+                        <th>Kredit summasi</th>
+                        <th>oylik foiz to`lovi</th>
+                        <th>Jami summa</th>
+                    </tr>
+                    <tbody id="table"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+<!--UP-->
+<div class="gototop js-top active">
+    <a href="#" class="js-gotop"><i class="fas fa-arrow-up"></i></a>
+</div>
+<!--UP END-->
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="demo 2.js"></script>
+
+</html>
